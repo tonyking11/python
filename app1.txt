@@ -1,2 +1,7 @@
 a
 협업가능한지 테스트용 문구
+
+git stash 가 잘 되는지 확인용
+
+왜 git stash 하니까 사라지지?
+다시 git stash pop 하면 생기고
