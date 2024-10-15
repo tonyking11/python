@@ -1,1 +1,2 @@
 a
+reset --hard 한 이후 첫 시험
