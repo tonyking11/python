@@ -12,3 +12,5 @@ for num in range(3):
 
     for i in 글리스트:
         print(i.text)
+
+print('안녕')
