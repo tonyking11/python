@@ -30,15 +30,14 @@ for company in companylist:
 
 
 # 데이터 가로 정렬 방식으로 출력 및 파일 쓰기
-with open('company.csv', 'w', encoding='utf-8-sig') as f:
+with open('company.csv', 'w', encoding='utf-8') as f:
     writer = csv.writer(f)
     # 각 카테고리 별로 데이터를 가로로 나열
     for i in range(4):  # 총 4개의 항목 (회사명, 현재가, 거래량, 등락률)
         row = [company_data[i] for company_data in all_company_data]  # 모든 회사의 i번째 항목을 가져옴
         print(row)
         writer.writerow(row)
-            
-
+        print(len(row))
     
 
 
