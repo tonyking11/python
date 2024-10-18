@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import urllib.request
 import re
-import unicodedata
+import unicodedata #한글이랑 영어 
 import csv
 
 # 데이터 = requests.get('https://www.google.com/finance/quote/005930:KRX?hl=ko')
@@ -37,7 +37,6 @@ with open('company.csv', 'w', encoding='utf-8') as f:
         row = [company_data[i] for company_data in all_company_data]  # 모든 회사의 i번째 항목을 가져옴
         print(row)
         writer.writerow(row)
-        print(len(row))
     
 
 
